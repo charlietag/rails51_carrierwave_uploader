@@ -1,0 +1,27 @@
+<%= form_with(model: doll, local: true) do |form| %>
+  <% if doll.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(doll.errors.count, "error") %> prohibited this doll from being saved:</h2>
+
+      <ul>
+      <% doll.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :doll_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avatar %>
+    <%= form.file_field :avatar, id: :doll_avatar %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
