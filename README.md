@@ -14,7 +14,7 @@ Things you may want to cover:
 * System dependencies
   * carrierwave
   * Upload
-    * Work with dropzone.js
+    * Works with dropzone.js well
 
 * Configuration
 
