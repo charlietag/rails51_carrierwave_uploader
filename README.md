@@ -13,6 +13,8 @@ Things you may want to cover:
 
 * System dependencies
   * carrierwave
+  * Upload
+    * Work with dropzone.js
 
 * Configuration
 

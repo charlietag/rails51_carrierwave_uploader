@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @dzone.title %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag @dzone.picture, width: "10%", class: "img-rounded img-responsive" %>
+</p>
+
+<%= link_to 'Edit', edit_dzone_path(@dzone) %> |
+<%= link_to 'Back', dzones_path %>

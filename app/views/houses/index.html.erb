@@ -17,7 +17,7 @@
         <td><%= house.name %></td>
         <td>
           <% house.picture.each do |i| %>
-          <%= image_tag i %>
+            <%= image_tag i,class: "img-rounded img-responsive" %>
           <% end %>
         </td>
         <td><%= link_to 'Show', house %></td>
