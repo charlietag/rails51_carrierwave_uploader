@@ -5,6 +5,6 @@
 #  Dropzone.options.myDzone=
 #    paramName: 'dzone[picture]'
 $(document).on "turbolinks:load", ->
-  $('#my_dzone').dropzone
+  $(".dropzone").dropzone
     paramName: 'dzone[picture]'
     autoDiscover: true
