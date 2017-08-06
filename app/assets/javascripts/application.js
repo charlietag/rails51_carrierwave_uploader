@@ -17,3 +17,4 @@
 //= require bootstrap/dist/js/bootstrap
 //= require dropzone/dist/dropzone
 //= require dzones
+//= require multidzones

@@ -1,0 +1,2 @@
+module MultidzonesHelper
+end

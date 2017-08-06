@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @multidzone.title %>
+</p>
+
+<p>
+  <strong>Pictures:</strong>
+  <% @multidzone.pictures.each do |i| %>
+    <%= image_tag i, width: "10%", class: "img-thumbnail img-responsive"  %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_multidzone_path(@multidzone) %> |
+<%= link_to 'Back', multidzones_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :multidzones
   resources :dzones
   resources :houses
   resources :dolls

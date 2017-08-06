@@ -1,4 +1,4 @@
-<%= form_with(model: dzone, local: true,class: "dropzone") do |form| %>
+<%= form_with(model: dzone, local: true,class: "dropzone", id: "my_single_dropzone") do |form| %>
   <% if dzone.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(dzone.errors.count, "error") %> prohibited this dzone from being saved:</h2>

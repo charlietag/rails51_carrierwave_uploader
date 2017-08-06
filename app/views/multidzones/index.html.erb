@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Multidzones</h1>
+
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Pictures</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @multidzones.each do |multidzone| %>
+      <tr>
+        <td><%= multidzone.title %></td>
+        <td>
+          <% multidzone.pictures.each do |i| %>
+            <%= image_tag i, width: "10%", class: "img-thumbnail img-responsive"  %>
+          <% end %>
+        </td>
+        <td><%= link_to 'Show', multidzone %></td>
+        <td><%= link_to 'Edit', edit_multidzone_path(multidzone) %></td>
+        <td><%= link_to 'Destroy', multidzone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Multidzone', new_multidzone_path %>

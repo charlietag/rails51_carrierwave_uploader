@@ -2,7 +2,7 @@
 
 <h1>Houses</h1>
 
-<table>
+<table class="table table-hover table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -17,7 +17,7 @@
         <td><%= house.name %></td>
         <td>
           <% house.picture.each do |i| %>
-            <%= image_tag i,class: "img-rounded img-responsive" %>
+            <%= image_tag i,width: "10%", class: "img-thumbnail img-responsive" %>
           <% end %>
         </td>
         <td><%= link_to 'Show', house %></td>
