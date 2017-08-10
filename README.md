@@ -16,7 +16,24 @@ Things you may want to cover:
   * Upload
     * Works with dropzone.js well
 
-* Configuration
+* References
+  * Gem
+    * carrierwave
+  * Commands
+    * yarn add dropzone jquery bootstrap
+    * bundle exec rails g scaffold dzone title:string picture:string
+  * Files
+    * app/models/
+      * dzone.rb
+    * app/controllers/
+      * dzones_controller.rb
+        * This file remains default
+    * app/views/dzones/
+      * _form.html.erb
+        * fallback class is useful
+    * assets
+      * js
+      * css
 
 * Database creation
   * MariaDB 10.1
